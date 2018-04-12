@@ -1,0 +1,89 @@
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  max-height: 100vh;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.container input {
+  display: none;
+}
+.container label {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  padding: 20px;
+  background: #92C400;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+.container label:hover {
+  background: #80ab01;
+}
+.container label .title {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: white;
+}
+.container label .title h2 {
+  margin: 0;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+}
+.container label .content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.25s 0.1s ease-out;
+}
+input[type=radio]:checked + .firstOne {
+  flex: 5;
+  background: black;
+  cursor: default;
+}
+input[type=radio]:checked + .firstOne h2 {
+  color: black;
+}
+input[type=radio]:checked + .firstOne .content {
+  flex: 4;
+  opacity: 1;
+  transform: scaleX(1);
+  color: #E74C3C;
+}
+input[type=radio]:checked + .secondOne {
+  flex: 5;
+  background: black;
+  cursor: default;
+}
+input[type=radio]:checked + .secondOne h2 {
+  color: black;
+}
+input[type=radio]:checked + .secondOne .content {
+  flex: 4;
+  opacity: 1;
+  transform: scaleX(1);
+  color: #E74C3C;
+}
+input[type=radio]:checked + .thirdOne {
+  flex: 5;
+  background: black;
+  cursor: default;
+}
+input[type=radio]:checked + .thirdOne h2 {
+  color: black;
+}
+input[type=radio]:checked + .thirdOne .content {
+  flex: 4;
+  opacity: 1;
+  transform: scaleX(1);
+  color: #E74C3C;
+}
+
